@@ -1,11 +1,11 @@
 import { Dimensions, StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
-    //Tela Inicial 
     background:{
         flex:1,
         backgroundColor:"#B3DDE3"
-       },
+    },
+    //Tela Inicial 
     container:{
         flex:18
 
@@ -75,8 +75,129 @@ export default StyleSheet.create({
         width: (Dimensions.get('window').width/8),
         height: Dimensions.get('window').width/8 
     },
-    
-    
+    //Tela Horário
+
+    containerTabelaHorarios:{
+        flex:14,
+        alignItems:'center',
+        justifyContent:'center',
+    },
+    eventosSemanais:{
+        flex:6
+    },
+    dias:{
+        flexDirection:'row',
+        width: (Dimensions.get('window').width/10)*8,
+        height: "7.69%",
+    },
+    boxVazia:{
+        width: '12.5%',
+        height :'100%' ,    
+        backgroundColor:'#fff',
+        borderColor:"#808080",
+        borderBottomWidth:1,
+        borderRightWidth:1,
+        borderTopLeftRadius:10
+    },
+    boxDias:{
+        width: '12.5%',
+        backgroundColor:'#fff',
+        height :'100%' ,    
+        borderColor:"#808080",
+        borderWidth:1,
+        borderLeftWidth:0,
+        borderTopWidth:0
+    },
+    boxDiasFinal:{
+        width: '12.5%',
+        height :'100%' ,    
+        backgroundColor:'#fff',
+        borderColor:"#808080",
+        borderBottomWidth:1,
+        borderTopRightRadius:10
+    },
+    containerColunasHorarios:{
+        flex:1,
+        flexDirection:'row'
+    },
+    horas:{
+        width: (Dimensions.get('window').width/10)*1,
+        height: "100%"
+    },
+    boxHoras:{
+        width: '100%',
+        height: '7.69%',
+        backgroundColor:"#fff",
+        borderColor:"#808080",
+        borderBottomWidth:1,
+        borderRightWidth:1,
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    boxHorasFinal:{
+        width: '100%',
+        height: '7.69%',
+        backgroundColor:"#fff",
+        borderColor:"#808080",
+        borderRightWidth:1,
+        borderBottomLeftRadius:10,
+        justifyContent:'center',
+        alignItems:'center',
+
+    },
+    txtHoras:{
+        maxHeight:'100%',
+        fontSize:9,
+        textAlignVertical:'center',
+        alignSelf:'center'
+    },
+    txtHorasBarra:{
+        height: '0.5%',
+        fontSize:9,
+        textAlignVertical:'center',
+        alignSelf:'center'
+    },
+    aulasDaSemana:{
+        width: (Dimensions.get('window').width/10)*1,
+        height: "100%"
+    },
+    boxAulas:{
+        width: '100%',
+        height: '7.69%',
+        backgroundColor:"#fff",
+        borderColor:"#808080",
+        borderBottomWidth:1,
+        borderRightWidth:1,
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    boxAulasUltimaLinha:{
+        width: '100%',
+        height: '7.69%',
+        backgroundColor:"#fff",
+        borderColor:"#808080",
+        borderRightWidth:1,
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    boxAulasUltimo:{
+        width: '100%',
+        height: '7.69%',
+        backgroundColor:"#fff",
+        borderColor:"#808080",
+        borderBottomWidth:1,    
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    boxAulasUltimoCanto:{
+        width: '100%',
+        height: '7.69%',
+        backgroundColor:"#fff",
+        borderColor:"#808080",
+        justifyContent:'center',
+        alignItems:'center',
+        borderBottomRightRadius:10
+    },
     //Tela Evento
     //Botão Adicionar
     BotaoAdicionar:{
