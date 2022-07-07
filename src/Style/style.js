@@ -7,7 +7,9 @@ export default StyleSheet.create({
     },
     //Tela Inicial 
     container:{
-        flex:18
+        flex:18,
+        justifyContent:'center',
+        alignItems:'center'
 
     },
     barra:{
@@ -26,7 +28,8 @@ export default StyleSheet.create({
         fontSize:26,
     },
     TxtTitulo:{
-        fontSize:17,
+        fontSize:14,
+        fontWeight:'500',
         paddingLeft:Dimensions.get('window').width*0.05,
         // fontFamily: DancingScript_600SemiBold
     },
@@ -154,6 +157,12 @@ export default StyleSheet.create({
         alignItems:'center',
 
     },
+    boxTxtHoras:{
+        width: "100%",
+        height: "90%",
+        justifyContent:'center',
+        alignItems:'center',
+    },
     txtDias:{
         fontSize:12,
         textAlignVertical:'center',
@@ -161,7 +170,7 @@ export default StyleSheet.create({
     },
     txtHoras:{
         maxHeight:'100%',
-        fontSize:9,
+        fontSize:8.5,
         textAlignVertical:'center',
         alignSelf:'center'
     },
@@ -213,8 +222,21 @@ export default StyleSheet.create({
         borderBottomRightRadius:10
     },
     //Componente Evento
+    containerComponenteEvento:{
+        // width: (Dimensions.get('window').width/20)*17,
+        // height: (Dimensions.get('window').width/20)*3,
+        width: 50,
+        height: 50,
+        backgroundColor:'#fff',
+        elevation:20,
+        shadowOpacity:1,
+        shadowColor:"#000"
+    },
+    //Componente Materia
 
-    
+    containerComponenteMateria:{
+
+    },
     //Tela Evento
     //Botão Adicionar
     BotaoAdicionar:{

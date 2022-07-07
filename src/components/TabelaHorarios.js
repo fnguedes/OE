@@ -27,9 +27,7 @@ export function Dias() {
   return (
     <View style={style.dias}>
       <View style={style.boxVazia}>
-        <Text style={style.txtHoras}>Dias</Text>
-        <Text style={style.txtHoras}>\</Text>
-        <Text style={style.txtHoras}>Horas</Text>
+        <Text style={style.txtHoras}>Hr\Dia</Text>
       </View>
       <View style={style.boxDias}> <Text style={style.txtDias}>Seg</Text></View>
       <View style={style.boxDias}> <Text style={style.txtDias}>Ter</Text></View>

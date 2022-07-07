@@ -1,6 +1,7 @@
 import React from 'react'
 import { SafeAreaView, Text, View, StatusBar, Image } from 'react-native'
 import style from '../Style/style'
+import CompEvent from '../components/Evento'
 
 export default function TelaInicial() {
 
@@ -22,7 +23,9 @@ export default function TelaInicial() {
                 <View style={style.barra}></View>
             </View>
 
-            <View style={style.container}></View>
+            <View style={style.container}>
+                <CompEvent/>
+            </View>
 
         </SafeAreaView>
 
