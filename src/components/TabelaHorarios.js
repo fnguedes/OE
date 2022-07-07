@@ -26,14 +26,18 @@ export function Dias() {
 
   return (
     <View style={style.dias}>
-      <View style={style.boxVazia}></View>
-      <View style={style.boxDias}></View>
-      <View style={style.boxDias}></View>
-      <View style={style.boxDias}></View>
-      <View style={style.boxDias}></View>
-      <View style={style.boxDias}></View>
-      <View style={style.boxDias}></View>
-      <View style={style.boxDiasFinal}></View>
+      <View style={style.boxVazia}>
+        <Text style={style.txtHoras}>Dias</Text>
+        <Text style={style.txtHoras}>\</Text>
+        <Text style={style.txtHoras}>Horas</Text>
+      </View>
+      <View style={style.boxDias}> <Text style={style.txtDias}>Seg</Text></View>
+      <View style={style.boxDias}> <Text style={style.txtDias}>Ter</Text></View>
+      <View style={style.boxDias}> <Text style={style.txtDias}>Qua</Text></View>
+      <View style={style.boxDias}> <Text style={style.txtDias}>Quin</Text></View>
+      <View style={style.boxDias}> <Text style={style.txtDias}>Sex</Text></View>
+      <View style={style.boxDias}> <Text style={style.txtDias}>Sab</Text></View>
+      <View style={style.boxDiasFinal}> <Text style={style.txtDias}>Dom</Text></View>
     </View>
 
   )
@@ -111,7 +115,7 @@ export function Horas() {
       <View style={style.boxHorasFinal}>
         <Text style={style.txtHoras}>05:00 </Text>
         <Text style={style.txtHoras}>-</Text>
-        <Text style={style.txtHoras}>07:00</Text> 
+        <Text style={style.txtHoras}>07:00</Text>
       </View>
     </View>
 

@@ -12,17 +12,23 @@ export default function Nome() {
                 <View style={style.containerColunasHorarios}>
 
                     <Horas />
-                    <Coluna/>
-                    <Coluna/>
-                    <Coluna/>
-                    <Coluna/>
-                    <Coluna/>
-                    <Coluna/>
-                    <Coluna ultimo={true}/>
+                    <Coluna />
+                    <Coluna />
+                    <Coluna />
+                    <Coluna />
+                    <Coluna />
+                    <Coluna />
+                    <Coluna ultimo={true} />
+
                 </View>
+
             </View>
             <View style={style.eventosSemanais}>
-
+                <View style={style.ContTitulo}>
+                    <Text style={style.TxtTitulo}>Eventos da Semana</Text>
+                    <View style={style.barra}></View>
+                </View>
+                
             </View>
         </SafeAreaView>
     )

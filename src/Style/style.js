@@ -17,7 +17,8 @@ export default StyleSheet.create({
         alignSelf:'center'
     },
     ContTitulo:{
-        flex:2
+        height:Dimensions.get('window').height/25 ,
+        width: "100%"
     },
     tituloPag:{
         alignSelf:'center',
@@ -25,7 +26,7 @@ export default StyleSheet.create({
         fontSize:26,
     },
     TxtTitulo:{
-        fontSize:20,
+        fontSize:17,
         paddingLeft:Dimensions.get('window').width*0.05,
         // fontFamily: DancingScript_600SemiBold
     },
@@ -78,12 +79,14 @@ export default StyleSheet.create({
     //Tela Horário
 
     containerTabelaHorarios:{
-        flex:14,
+        flex:12,
         alignItems:'center',
         justifyContent:'center',
+        marginTop:10
     },
     eventosSemanais:{
-        flex:6
+        flex:8,
+        marginTop:10
     },
     dias:{
         flexDirection:'row',
@@ -97,7 +100,9 @@ export default StyleSheet.create({
         borderColor:"#808080",
         borderBottomWidth:1,
         borderRightWidth:1,
-        borderTopLeftRadius:10
+        borderTopLeftRadius:10,
+        justifyContent:'center',
+        alignItems:'center'
     },
     boxDias:{
         width: '12.5%',
@@ -106,7 +111,9 @@ export default StyleSheet.create({
         borderColor:"#808080",
         borderWidth:1,
         borderLeftWidth:0,
-        borderTopWidth:0
+        borderTopWidth:0,
+        justifyContent:'center',
+        alignItems:'center'
     },
     boxDiasFinal:{
         width: '12.5%',
@@ -114,7 +121,9 @@ export default StyleSheet.create({
         backgroundColor:'#fff',
         borderColor:"#808080",
         borderBottomWidth:1,
-        borderTopRightRadius:10
+        borderTopRightRadius:10,
+        justifyContent:'center',
+        alignItems:'center'
     },
     containerColunasHorarios:{
         flex:1,
@@ -126,7 +135,7 @@ export default StyleSheet.create({
     },
     boxHoras:{
         width: '100%',
-        height: '7.69%',
+        height: '8.3%',
         backgroundColor:"#fff",
         borderColor:"#808080",
         borderBottomWidth:1,
@@ -136,7 +145,7 @@ export default StyleSheet.create({
     },
     boxHorasFinal:{
         width: '100%',
-        height: '7.69%',
+        height: '8.3%',
         backgroundColor:"#fff",
         borderColor:"#808080",
         borderRightWidth:1,
@@ -144,6 +153,11 @@ export default StyleSheet.create({
         justifyContent:'center',
         alignItems:'center',
 
+    },
+    txtDias:{
+        fontSize:12,
+        textAlignVertical:'center',
+        alignSelf:'center'
     },
     txtHoras:{
         maxHeight:'100%',
@@ -163,7 +177,7 @@ export default StyleSheet.create({
     },
     boxAulas:{
         width: '100%',
-        height: '7.69%',
+        height: '8.3%',
         backgroundColor:"#fff",
         borderColor:"#808080",
         borderBottomWidth:1,
@@ -173,7 +187,7 @@ export default StyleSheet.create({
     },
     boxAulasUltimaLinha:{
         width: '100%',
-        height: '7.69%',
+        height: '8.3%',
         backgroundColor:"#fff",
         borderColor:"#808080",
         borderRightWidth:1,
@@ -182,7 +196,7 @@ export default StyleSheet.create({
     },
     boxAulasUltimo:{
         width: '100%',
-        height: '7.69%',
+        height: '8.3%',
         backgroundColor:"#fff",
         borderColor:"#808080",
         borderBottomWidth:1,    
@@ -191,13 +205,16 @@ export default StyleSheet.create({
     },
     boxAulasUltimoCanto:{
         width: '100%',
-        height: '7.69%',
+        height: '8.3%',
         backgroundColor:"#fff",
         borderColor:"#808080",
         justifyContent:'center',
         alignItems:'center',
         borderBottomRightRadius:10
     },
+    //Componente Evento
+
+    
     //Tela Evento
     //Botão Adicionar
     BotaoAdicionar:{
