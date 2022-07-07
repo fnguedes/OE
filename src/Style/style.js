@@ -249,10 +249,10 @@ export default StyleSheet.create({
         justifyContent:'center',
     },
     txtAdicionar:{
-        fontSize:35 ,
+        fontSize:26 ,
         alignItems:'center',
         justifyContent:'center',
-        fontWeight:'bold',
+        fontWeight:'500',
         color:"#fff",
         paddingBottom:6,
     },

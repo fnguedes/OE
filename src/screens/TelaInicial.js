@@ -4,9 +4,6 @@ import style from '../Style/style'
 import CompEvent from '../components/Evento'
 
 export default function TelaInicial() {
-
-    
-
     return (
         <SafeAreaView style={style.background}>
             <StatusBar />

@@ -3,10 +3,10 @@ import { Text, View, SafeAreaView } from 'react-native'
 import style from '../Style/style'
 import Coluna, { Horas, Dias } from '../components/TabelaHorarios'
 
-export default function Nome() {
+export default function Horarios() {
     return (
         <SafeAreaView style={style.background}>
-            <Text style={style.tituloPag}>Tela de Horários</Text>
+            <Text style={style.tituloPag}>Horários</Text>
             <View style={style.containerTabelaHorarios}>
                 <Dias />
                 <View style={style.containerColunasHorarios}>

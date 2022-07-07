@@ -3,11 +3,11 @@ import style from '../Style/style'
 import { SafeAreaView, Text,View } from 'react-native'
 import Adicionar from '../components/ButtonAdicionar'
 
-export default function Nome() {
+export default function Materias() {
     return (
         <SafeAreaView style={style.background}>
             <Text style={style.tituloPag}>
-                Tela caderno
+                Matérias
             </Text>
             <View style={style.containerEventos}>
                 <View style={style.containerEventos}>

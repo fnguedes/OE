@@ -1,9 +1,7 @@
 import React from 'react'
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
-import style from './Style/style'
-import {Dimensions, Image} from 'react-native'
 import TelaI from './screens/TelaInicial'
-import TelaC from './screens/TelaCad'
+import TelaC from './screens/TelaMaterias'
 import TelaH from './screens/TelaHorarios'
 import TelaE from './screens/TelaEvento'
 import Botao from './components/Button'
@@ -42,7 +40,7 @@ export default function routes(){
             }}
             />
 
-            <Tab.Screen name="Tela Caderno" component={TelaC}
+            <Tab.Screen name="Tela Materias" component={TelaC}
              options={{
                 tabBarIcon: ({size,color})=> (
                     color == "#fff"?
