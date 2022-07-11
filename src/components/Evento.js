@@ -11,7 +11,7 @@ export default function Evento() {
           <Text style={style.txtInfoEventoDesc}>Breve descrição fica aqui </Text>
         </View>
         <View style={style.boxHorarioEvento}>
-          <Text>22:00</Text>
+          <Text style={style.txtHoraEvento}>22:00</Text>
         </View>
       </View>
     </View>

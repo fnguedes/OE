@@ -1,3 +1,4 @@
+import { DancingScript_600SemiBold } from '@expo-google-fonts/dancing-script'
 import { Dimensions, StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
@@ -30,6 +31,7 @@ export default StyleSheet.create({
         alignSelf:'center',
         paddingTop:10,
         fontSize:26,
+        fontFamily:DancingScript_600SemiBold
     },
     TxtTitulo:{
         fontSize:14,
@@ -83,7 +85,7 @@ export default StyleSheet.create({
         width: (Dimensions.get('window').width/8),
         height: Dimensions.get('window').width/8 
     },
-    //Tela Horário
+    //*Tela Horário
 
     containerTabelaHorarios:{
         flex:12,
@@ -233,10 +235,10 @@ export default StyleSheet.create({
         alignItems:'center',
         borderBottomRightRadius:10
     },
-    //Componente Evento
+    //*Componente Evento
     containerComponenteEvento:{
         width: (Dimensions.get('window').width/20)*17,
-        height: (Dimensions.get('window').width/20)*2.5,
+        height: (Dimensions.get('window').width/20)*2,
         backgroundColor:'#fff',
         borderRadius:25,
         elevation:2,
@@ -263,17 +265,20 @@ export default StyleSheet.create({
     },
     txtInfoEventoTitulo:{
         fontWeight:'bold',
-        paddingLeft:7,
-        paddingTop:4,
+        paddingLeft:5,
+        paddingTop:2,
         flex:1
     },
     txtInfoEventoDesc:{
         fontSize:11,
-        paddingLeft:7,
+        paddingLeft:5,
         flex:1
     },
     txtHorarioEvento:{
         fontWeight:'700'
+    },
+    txtHoraEvento:{
+        fontWeight:'600'
     },
     //Componente Materia
     containerComponenteMateria:{
@@ -327,17 +332,14 @@ export default StyleSheet.create({
         height: (Dimensions.get('window').width/20)*2.5,
         backgroundColor:'#ACAFFF',
         marginTop:10,
-        borderRadius:10,
+        borderRadius:11,
         elevation:2
     }, 
     boxSiglaMatCad:{
         height:'100%',
-        width: '21.5%',
+        width: '20%',
         backgroundColor:'#1B2796',
-        borderTopLeftRadius:10,
-        borderBottomLeftRadius:10,
-        borderTopRightRadius:10,
-        borderBottomRightRadius:10,
+        borderRadius:11,
         alignItems:'center',
         justifyContent:'center'
     },
@@ -351,7 +353,7 @@ export default StyleSheet.create({
         alignItems:'center',
         justifyContent:'center'
     },
-    //Tela Evento
+    
     //Botão Adicionar
     BotaoAdicionar:{
         width: Dimensions.get('window').width/9,
@@ -379,5 +381,62 @@ export default StyleSheet.create({
     containerAdicionarEvento:{
         flex:3,
         alignItems:'flex-end'
+    },
+
+    //*Componente Evento Cadastrado
+
+    containerEventoCad:{
+        width: (Dimensions.get('window').width/20)*17,
+        height: (Dimensions.get('window').width/20)*6.5,
+        backgroundColor:'#fff',
+        borderRadius:19
+        },
+    boxEventoCad:{
+        width: '100%',
+        height: '20%',
+        backgroundColor:'#6AEA77',
+        justifyContent:'center',
+        alignItems:'center',
+        borderTopLeftRadius:19,
+        borderTopRightRadius:19
+    },
+    boxDescEventoCad:{
+        width: '100%',
+        height: '60%',
+        padding: 5
+    },
+    containerHorarioEventoCad:{
+        width: '100%',
+        height: '20%',
+        backgroundColor:'#D9D9D9',
+        flexDirection:'row',
+        borderBottomRightRadius:19,
+        borderBottomLeftRadius:19
+    },
+    boxEventoData:{
+        height: '100%',
+        width: '70%',
+        paddingLeft:15,
+        justifyContent:'center'
+    },
+    lixoEventoCad:{
+        height: '100%',
+        width: '30%',
+        justifyContent:'center',
+        alignItems:'flex-end',
+        paddingRight:10
+
+    },
+    txtTituloEventoCad:{
+        fontWeight:'600'
+    },
+    txtDescEvento:{
+        height: '100%',
+        width: '100%',
+        fontSize:12
+    },
+    txtEvento:{
+        fontSize:12,
+        fontWeight:'600'
     }
 })
