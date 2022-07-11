@@ -2,24 +2,27 @@ import React from 'react'
 import { Text, View, SafeAreaView } from 'react-native'
 import style from '../Style/style'
 import Coluna, { Horas, Dias } from '../components/TabelaHorarios'
+import CompEvent from '../components/Evento'
 
 export default function Horarios() {
     return (
         <SafeAreaView style={style.background}>
             <Text style={style.tituloPag}>Horários</Text>
             <View style={style.containerTabelaHorarios}>
-                <Dias />
-                <View style={style.containerColunasHorarios}>
+                <View style={style.containerTabela}>
+                    <Dias />
+                    <View style={style.containerColunasHorarios}>
 
-                    <Horas />
-                    <Coluna />
-                    <Coluna />
-                    <Coluna />
-                    <Coluna />
-                    <Coluna />
-                    <Coluna />
-                    <Coluna ultimo={true} />
+                        <Horas />
+                        <Coluna />
+                        <Coluna />
+                        <Coluna />
+                        <Coluna />
+                        <Coluna />
+                        <Coluna />
+                        <Coluna ultimo={true} />
 
+                    </View>
                 </View>
 
             </View>
@@ -28,7 +31,10 @@ export default function Horarios() {
                     <Text style={style.TxtTitulo}>Eventos da Semana</Text>
                     <View style={style.barra}></View>
                 </View>
-                
+                <View style={style.container}>
+                    <CompEvent />
+                    <CompEvent />
+                </View>
             </View>
         </SafeAreaView>
     )

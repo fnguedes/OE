@@ -11,10 +11,10 @@ export default function Eventos() {
                 <View style={style.containerEventos}>
 
                 </View>
-                <View style={style.containerAdicionarEvento}>
-                    <Adicionar caminho={'bla'}/>
 
-                </View>
+            </View>
+            <View style={style.containerAdicionarEvento}>
+                <Adicionar caminho={'bla'} />
 
             </View>
         </SafeAreaView>

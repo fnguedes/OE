@@ -8,7 +8,11 @@ export default StyleSheet.create({
     //Tela Inicial 
     container:{
         flex:18,
-        justifyContent:'center',
+        alignItems:'center'
+
+    },
+    containerEventoDia:{
+        flex:23,
         alignItems:'center'
 
     },
@@ -85,7 +89,14 @@ export default StyleSheet.create({
         flex:12,
         alignItems:'center',
         justifyContent:'center',
-        marginTop:10
+        marginTop:20,
+        marginBottom:20
+    },
+    containerTabela:{
+        width: "90%",
+        height: '100%',
+        alignItems:'center',
+        justifyContent:'center',
     },
     eventosSemanais:{
         flex:8,
@@ -93,7 +104,7 @@ export default StyleSheet.create({
     },
     dias:{
         flexDirection:'row',
-        width: (Dimensions.get('window').width/10)*8,
+        width: '100%',
         height: "7.69%",
     },
     boxVazia:{
@@ -129,11 +140,12 @@ export default StyleSheet.create({
         alignItems:'center'
     },
     containerColunasHorarios:{
-        flex:1,
-        flexDirection:'row'
+        width: '100%',
+        height: '100%',
+        flexDirection:'row',
     },
     horas:{
-        width: (Dimensions.get('window').width/10)*1,
+        width: '12.5%',
         height: "100%"
     },
     boxHoras:{
@@ -181,7 +193,7 @@ export default StyleSheet.create({
         alignSelf:'center'
     },
     aulasDaSemana:{
-        width: (Dimensions.get('window').width/10)*1,
+        width: '12.5%',
         height: "100%"
     },
     boxAulas:{
@@ -223,19 +235,121 @@ export default StyleSheet.create({
     },
     //Componente Evento
     containerComponenteEvento:{
-        // width: (Dimensions.get('window').width/20)*17,
-        // height: (Dimensions.get('window').width/20)*3,
-        width: 50,
-        height: 50,
+        width: (Dimensions.get('window').width/20)*17,
+        height: (Dimensions.get('window').width/20)*2.5,
         backgroundColor:'#fff',
-        elevation:20,
-        shadowOpacity:1,
-        shadowColor:"#000"
+        borderRadius:25,
+        elevation:2,
+        marginTop:10
+    },
+    nivelPrioridade:{
+        width: "8%",
+        height: "100%",
+        borderTopLeftRadius:25,
+        borderBottomLeftRadius:25,
+        backgroundColor:"#0f0"
+    },
+    boxInfoEvento:{
+        width: "72%",
+        height: "100%",
+    },
+    boxHorarioEvento:{
+        width: "20%",
+        height: "100%",
+        borderTopRightRadius:25,
+        borderBottomRightRadius:25,
+        alignItems:'center',
+        justifyContent:'center'
+    },
+    txtInfoEventoTitulo:{
+        fontWeight:'bold',
+        paddingLeft:7,
+        paddingTop:4,
+        flex:1
+    },
+    txtInfoEventoDesc:{
+        fontSize:11,
+        paddingLeft:7,
+        flex:1
+    },
+    txtHorarioEvento:{
+        fontWeight:'700'
     },
     //Componente Materia
-
     containerComponenteMateria:{
+        width: (Dimensions.get('window').width/20)*17,
+        height: (Dimensions.get('window').width/20)*2,
+        flexDirection:'row',
+        backgroundColor:'#ACAFFF',
+        borderRadius:30,
+        elevation:2
+    },
+    boxSiglaMat:{
+        height:'100%',
+        width: '21.5%',
+        backgroundColor:'#1B2796',
+        borderTopLeftRadius:30,
+        borderBottomLeftRadius:30,
+        borderTopRightRadius:10,
+        borderBottomRightRadius:10,
+        alignItems:'center',
+        justifyContent:'center'
+        
+    },
+    txtSigla:{
+        fontSize:30,
+        fontWeight:'bold',
+        color:'#fff'
+    },
+    boxNomeProf:{
+        height:'100%',
+        width: '53.5%',
+        justifyContent:'center'
+    },
+    txtNomeProf:{
+        marginLeft:7,
+        fontWeight:'600',
+        fontSize:13
+    },
+    boxHoraAula:{
+        height:'100%',
+        width: '25%',
+        justifyContent:'center'
+    },
+    txtHoraAula:{
+        fontSize:12,
+        fontWeight:'500'
+    },
+    //Componente Matéria Cadastrada
 
+    ContainerMatCadastrada:{
+        width: (Dimensions.get('window').width/20)*17.5,
+        height: (Dimensions.get('window').width/20)*2.5,
+        backgroundColor:'#ACAFFF',
+        marginTop:10,
+        borderRadius:10,
+        elevation:2
+    }, 
+    boxSiglaMatCad:{
+        height:'100%',
+        width: '21.5%',
+        backgroundColor:'#1B2796',
+        borderTopLeftRadius:10,
+        borderBottomLeftRadius:10,
+        borderTopRightRadius:10,
+        borderBottomRightRadius:10,
+        alignItems:'center',
+        justifyContent:'center'
+    },
+    txtNomeMat:{
+        fontSize:11,
+        marginLeft:7
+    },
+    lixo:{
+        height: '100%',
+        width: '15%',
+        alignItems:'center',
+        justifyContent:'center'
     },
     //Tela Evento
     //Botão Adicionar
@@ -254,15 +368,13 @@ export default StyleSheet.create({
         justifyContent:'center',
         fontWeight:'500',
         color:"#fff",
-        paddingBottom:6,
+        paddingBottom:2
     },
     //Tela de Evento
+    
     containerEventos:{
-        flex:20,
-
-    },
-    containerEventos:{
-        flex:17
+        flex:17,
+        alignItems:'center'
     },
     containerAdicionarEvento:{
         flex:3,
