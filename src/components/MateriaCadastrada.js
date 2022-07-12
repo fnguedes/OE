@@ -15,7 +15,7 @@ export default function MateriaCadastrada() {
                         <Text style={style.txtNomeMat}>Processamento de Imagens</Text>
                     </View>
                 </View>
-                <TouchableOpacity style={style.lixo}>Lixo</TouchableOpacity>
+                <TouchableOpacity style={style.lixo}></TouchableOpacity>
             </View>
 
         </View>

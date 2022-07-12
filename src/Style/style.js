@@ -1,3 +1,4 @@
+
 import { DancingScript_600SemiBold } from '@expo-google-fonts/dancing-script'
 import { Dimensions, StyleSheet } from 'react-native'
 
@@ -31,7 +32,7 @@ export default StyleSheet.create({
         alignSelf:'center',
         paddingTop:10,
         fontSize:26,
-        fontFamily:DancingScript_600SemiBold
+        fontFamily:'DancingScript_600SemiBold'
     },
     TxtTitulo:{
         fontSize:14,

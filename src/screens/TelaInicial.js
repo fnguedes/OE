@@ -8,11 +8,11 @@ import AppLoading from 'expo-app-loading'
 
 export default function TelaInicial() {
 
-    const[fontsLoaded] =useFonts({DancingScript_600SemiBold})
+    // const[fontsLoaded] =useFonts({DancingScript_600SemiBold})
 
-    if(!fontsLoaded){
-        <AppLoading/>
-    }
+    // if(!fontsLoaded){
+    //     <AppLoading/>
+    // }
 
     return (
         <SafeAreaView style={style.background}>

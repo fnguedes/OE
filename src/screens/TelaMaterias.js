@@ -7,7 +7,7 @@ export default function Materias() {
     return (
         <SafeAreaView style={style.background}>
             <Text style={style.tituloPag}>
-                Matérias
+             Matérias
             </Text>
             <View style={style.containerEventos}>
                 <View style={style.containerEventos}>
