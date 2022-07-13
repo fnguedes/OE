@@ -1,5 +1,8 @@
 
-import { DancingScript_600SemiBold } from '@expo-google-fonts/dancing-script'
+// import { Cinzel_400Regular } from '@expo-google-fonts/cinzel'
+// import { DancingScript_600SemiBold } from '@expo-google-fonts/dancing-script'
+// import { Merriweather_400Regular } from '@expo-google-fonts/merriweather'
+// import { Rubik_400Regular } from '@expo-google-fonts/rubik'
 import { Dimensions, StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
@@ -273,13 +276,15 @@ export default StyleSheet.create({
     txtInfoEventoDesc:{
         fontSize:11,
         paddingLeft:5,
-        flex:1
+        flex:1,
+        fontFamily:'Cinzel_400Regular'
     },
     txtHorarioEvento:{
         fontWeight:'700'
     },
     txtHoraEvento:{
-        fontWeight:'600'
+        fontWeight:'600',
+        fontFamily:'Rubik_400Regular'
     },
     //Componente Materia
     containerComponenteMateria:{
@@ -305,7 +310,8 @@ export default StyleSheet.create({
     txtSigla:{
         fontSize:30,
         fontWeight:'bold',
-        color:'#fff'
+        color:'#fff',
+        fontFamily:'Merriweather_400Regular'
     },
     boxNomeProf:{
         height:'100%',
@@ -315,7 +321,8 @@ export default StyleSheet.create({
     txtNomeProf:{
         marginLeft:7,
         fontWeight:'600',
-        fontSize:13
+        fontSize:13,
+        fontFamily:'Courgette_400Regular'
     },
     boxHoraAula:{
         height:'100%',
