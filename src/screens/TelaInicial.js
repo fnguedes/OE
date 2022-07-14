@@ -3,16 +3,10 @@ import { SafeAreaView, Text, View, StatusBar } from 'react-native'
 import style from '../Style/style'
 import CompEvent from '../components/Evento'
 import CompMat from '../components/Materia'
-import { useFonts,DancingScript_600SemiBold } from '@expo-google-fonts/dancing-script'
-import AppLoading from 'expo-app-loading'
 
 export default function TelaInicial() {
 
-    // const[fontsLoaded] =useFonts({DancingScript_600SemiBold})
-
-    // if(!fontsLoaded){
-    //     <AppLoading/>
-    // }
+   
 
     return (
         <SafeAreaView style={style.background}>
@@ -33,7 +27,6 @@ export default function TelaInicial() {
             </View>
 
             <View style={style.containerEventoDia}>
-                <CompEvent/>
                 <CompEvent/>
             </View>
 

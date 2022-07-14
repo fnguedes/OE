@@ -33,7 +33,6 @@ export default function Horarios() {
                 </View>
                 <View style={style.container}>
                     <CompEvent />
-                    <CompEvent />
                 </View>
             </View>
         </SafeAreaView>

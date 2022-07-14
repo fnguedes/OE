@@ -1,8 +1,12 @@
 
-// import { Cinzel_400Regular } from '@expo-google-fonts/cinzel'
-// import { DancingScript_600SemiBold } from '@expo-google-fonts/dancing-script'
-// import { Merriweather_400Regular } from '@expo-google-fonts/merriweather'
-// import { Rubik_400Regular } from '@expo-google-fonts/rubik'
+import { Cinzel_400Regular } from '@expo-google-fonts/cinzel'
+import { Courgette_400Regular } from '@expo-google-fonts/courgette'
+import { DancingScript_600SemiBold } from '@expo-google-fonts/dancing-script'
+import { Merriweather_400Regular } from '@expo-google-fonts/merriweather'
+import { Parisienne_400Regular } from '@expo-google-fonts/parisienne'
+import { Rubik_400Regular } from '@expo-google-fonts/rubik'
+import { Tinos_400Regular } from '@expo-google-fonts/tinos'
+import { Unna_400Regular } from '@expo-google-fonts/unna'
 import { Dimensions, StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
@@ -10,7 +14,7 @@ export default StyleSheet.create({
         flex:1,
         backgroundColor:"#B3DDE3"
     },
-    //Tela Inicial 
+    //*Tela Inicial 
     container:{
         flex:18,
         alignItems:'center'
@@ -38,14 +42,14 @@ export default StyleSheet.create({
         fontFamily:'DancingScript_600SemiBold'
     },
     TxtTitulo:{
-        fontSize:14,
+        fontSize:20,
         fontWeight:'500',
         paddingLeft:Dimensions.get('window').width*0.05,
-        // fontFamily: DancingScript_600SemiBold
+        fontFamily: 'DancingScript_600SemiBold'
     },
         
     
-    //TabBar
+    //*TabBar
 
     ContTab:{
         height:window.height*0.1,
@@ -95,7 +99,7 @@ export default StyleSheet.create({
         flex:12,
         alignItems:'center',
         justifyContent:'center',
-        marginTop:20,
+        marginTop:30,
         marginBottom:20
     },
     containerTabela:{
@@ -184,13 +188,15 @@ export default StyleSheet.create({
     txtDias:{
         fontSize:12,
         textAlignVertical:'center',
-        alignSelf:'center'
+        alignSelf:'center',
+        fontFamily:'Unna_400Regular'
     },
     txtHoras:{
         maxHeight:'100%',
         fontSize:8.5,
         textAlignVertical:'center',
-        alignSelf:'center'
+        alignSelf:'center',
+        fontFamily:'Tinos_400Regular'
     },
     txtHorasBarra:{
         height: '0.5%',
@@ -239,6 +245,7 @@ export default StyleSheet.create({
         alignItems:'center',
         borderBottomRightRadius:10
     },
+
     //*Componente Evento
     containerComponenteEvento:{
         width: (Dimensions.get('window').width/20)*17,
@@ -249,11 +256,11 @@ export default StyleSheet.create({
         marginTop:10
     },
     nivelPrioridade:{
-        width: "8%",
+        width: "6.5%",
         height: "100%",
         borderTopLeftRadius:25,
         borderBottomLeftRadius:25,
-        backgroundColor:"#0f0"
+        backgroundColor:"#2CEA37"
     },
     boxInfoEvento:{
         width: "72%",
@@ -268,13 +275,14 @@ export default StyleSheet.create({
         justifyContent:'center'
     },
     txtInfoEventoTitulo:{
-        fontWeight:'bold',
         paddingLeft:5,
         paddingTop:2,
-        flex:1
+        flex:1,
+        fontFamily:'Courgette_400Regular',
+        fontSize:13
     },
     txtInfoEventoDesc:{
-        fontSize:11,
+        fontSize:9,
         paddingLeft:5,
         flex:1,
         fontFamily:'Cinzel_400Regular'
@@ -283,17 +291,20 @@ export default StyleSheet.create({
         fontWeight:'700'
     },
     txtHoraEvento:{
-        fontWeight:'600',
-        fontFamily:'Rubik_400Regular'
+        fontWeight:'500',
+        fontFamily:'Rubik_400Regular_Italic',
+        fontSize:11
     },
-    //Componente Materia
+
+    //*Componente Materia
     containerComponenteMateria:{
         width: (Dimensions.get('window').width/20)*17,
         height: (Dimensions.get('window').width/20)*2,
         flexDirection:'row',
         backgroundColor:'#ACAFFF',
         borderRadius:30,
-        elevation:2
+        elevation:2,
+        marginTop:15
     },
     boxSiglaMat:{
         height:'100%',
@@ -309,9 +320,8 @@ export default StyleSheet.create({
     },
     txtSigla:{
         fontSize:30,
-        fontWeight:'bold',
         color:'#fff',
-        fontFamily:'Merriweather_400Regular'
+        fontFamily:'Merriweather_900Black'
     },
     boxNomeProf:{
         height:'100%',
@@ -320,7 +330,6 @@ export default StyleSheet.create({
     },
     txtNomeProf:{
         marginLeft:7,
-        fontWeight:'600',
         fontSize:13,
         fontFamily:'Courgette_400Regular'
     },
@@ -330,16 +339,20 @@ export default StyleSheet.create({
         justifyContent:'center'
     },
     txtHoraAula:{
-        fontSize:12,
+        fontSize:11,
         fontWeight:'500'
     },
-    //Componente Matéria Cadastrada
+    lixoImage:{
+        width: (Dimensions.get('window').width/10),
+        height: Dimensions.get('window').width/10 
+    },
+    //*Componente Matéria Cadastrada
 
     ContainerMatCadastrada:{
         width: (Dimensions.get('window').width/20)*17.5,
         height: (Dimensions.get('window').width/20)*2.5,
         backgroundColor:'#ACAFFF',
-        marginTop:10,
+        marginTop:20,
         borderRadius:11,
         elevation:2
     }, 
@@ -352,8 +365,9 @@ export default StyleSheet.create({
         justifyContent:'center'
     },
     txtNomeMat:{
-        fontSize:11,
-        marginLeft:7
+        fontSize:10,
+        marginLeft:7,
+        fontFamily:'Cinzel_400Regular'
     },
     lixo:{
         height: '100%',
@@ -362,7 +376,7 @@ export default StyleSheet.create({
         justifyContent:'center'
     },
     
-    //Botão Adicionar
+    //*Botão Adicionar
     BotaoAdicionar:{
         width: Dimensions.get('window').width/9,
         height: Dimensions.get('window').width/9,
@@ -380,7 +394,7 @@ export default StyleSheet.create({
         color:"#fff",
         paddingBottom:2
     },
-    //Tela de Evento
+    //*Tela de Evento
     
     containerEventos:{
         flex:17,
@@ -397,7 +411,8 @@ export default StyleSheet.create({
         width: (Dimensions.get('window').width/20)*17,
         height: (Dimensions.get('window').width/20)*6.5,
         backgroundColor:'#fff',
-        borderRadius:19
+        borderRadius:19,
+        marginTop:20
         },
     boxEventoCad:{
         width: '100%',
@@ -425,7 +440,8 @@ export default StyleSheet.create({
         height: '100%',
         width: '70%',
         paddingLeft:15,
-        justifyContent:'center'
+        alignItems:'center',
+        flexDirection:'row'
     },
     lixoEventoCad:{
         height: '100%',
@@ -436,15 +452,22 @@ export default StyleSheet.create({
 
     },
     txtTituloEventoCad:{
-        fontWeight:'600'
+        fontFamily:'Courgette_400Regular',
     },
     txtDescEvento:{
         height: '100%',
         width: '100%',
-        fontSize:12
+        fontSize:14,
+        fontFamily:'Parisienne_400Regular'
     },
     txtEvento:{
         fontSize:12,
-        fontWeight:'600'
+        fontWeight:'600',
+        marginRight:15
+    },
+    lixinho:{
+        width: Dimensions.get('window').width/20,
+        height: Dimensions.get('window').width/20,
+        marginRight:12
     }
 })
