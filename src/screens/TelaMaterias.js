@@ -1,7 +1,7 @@
 import React from 'react'
 import style from '../Style/style'
 import { SafeAreaView, Text, View } from 'react-native'
-import Adicionar from '../components/ButtonAdicionar'
+import Adicionar from '../components/ButtonAdicionarMat'
 import Mat from '../components/MateriaCadastrada'
 export default function Materias({navigation}) {
     return (
@@ -11,12 +11,12 @@ export default function Materias({navigation}) {
             </Text>
             <View style={style.containerEventos}>
                 <View style={style.containerEventos}>
-                    <Mat />
+                    <Mat navigation={navigation}/>
                 </View>
 
             </View>
             <View style={style.containerAdicionarEvento}>
-                <Adicionar navigation={navigation} />
+                <Adicionar navigation={navigation} evento={false}/>
 
             </View>
         </SafeAreaView>

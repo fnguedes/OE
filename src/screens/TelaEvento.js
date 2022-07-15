@@ -1,10 +1,10 @@
 import React from 'react'
 import { Text, View, SafeAreaView } from 'react-native'
 import style from '../Style/style'
-import Adicionar from '../components/ButtonAdicionar'
+import Adicionar from '../components/ButtonAdicionarEvent'
 import EventCad from '../components/EventoCadastrado'
 
-export default function Eventos() {
+export default function Eventos({navigation}) {
     return (
         <SafeAreaView style={style.background}>
             <Text style={style.tituloPag}>Eventos</Text>
@@ -15,7 +15,7 @@ export default function Eventos() {
 
             </View>
             <View style={style.containerAdicionarEvento}>
-                <Adicionar caminho={'bla'} />
+                <Adicionar navigation={navigation} />
 
             </View>
         </SafeAreaView>

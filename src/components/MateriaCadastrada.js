@@ -2,9 +2,9 @@ import { View, Text, TouchableOpacity,Image} from 'react-native'
 import React from 'react'
 import style from '../Style/style'
 
-export default function MateriaCadastrada() {
+export default function MateriaCadastrada({navigation}) {
     return (
-        <TouchableOpacity style={style.ContainerMatCadastrada}>
+        <TouchableOpacity style={style.ContainerMatCadastrada} onPress={()=>navigation.navigate('Tela Info Materia')}>
             <View style={{ flexDirection: 'row', flex: 1 }}>
                 <View style={style.boxSiglaMatCad}>
                     <Text style={style.txtSigla}>PI</Text>
