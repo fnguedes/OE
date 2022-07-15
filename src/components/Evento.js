@@ -1,9 +1,9 @@
-import { View, Text } from 'react-native'
+import { View, Text,TouchableOpacity } from 'react-native'
 import React from 'react'
 import style from '../Style/style'
-export default function Evento() {
+export default function Evento({navigation}) {
   return (
-    <View style={style.containerComponenteEvento}>
+    <TouchableOpacity style={style.containerComponenteEvento} onPress={ ()=>navigation.navigate('Tela Eventos') }>
       <View style={{ flexDirection: 'row',flex:1 }}>
         <View style={style.nivelPrioridade}></View>
         <View style={style.boxInfoEvento}>
@@ -14,6 +14,6 @@ export default function Evento() {
           <Text style={style.txtHoraEvento}>22:00</Text>
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   )
 }

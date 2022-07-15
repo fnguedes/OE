@@ -4,7 +4,7 @@ import { Courgette_400Regular } from '@expo-google-fonts/courgette'
 import { DancingScript_600SemiBold } from '@expo-google-fonts/dancing-script'
 import { Merriweather_400Regular } from '@expo-google-fonts/merriweather'
 import { Parisienne_400Regular } from '@expo-google-fonts/parisienne'
-import { Rubik_400Regular } from '@expo-google-fonts/rubik'
+import { Rubik_400Regular_Italic } from '@expo-google-fonts/rubik'
 import { Tinos_400Regular } from '@expo-google-fonts/tinos'
 import { Unna_400Regular } from '@expo-google-fonts/unna'
 import { Dimensions, StyleSheet } from 'react-native'
@@ -193,7 +193,7 @@ export default StyleSheet.create({
     },
     txtHoras:{
         maxHeight:'100%',
-        fontSize:8.5,
+        fontSize:8,
         textAlignVertical:'center',
         alignSelf:'center',
         fontFamily:'Tinos_400Regular'
@@ -293,7 +293,7 @@ export default StyleSheet.create({
     txtHoraEvento:{
         fontWeight:'500',
         fontFamily:'Rubik_400Regular_Italic',
-        fontSize:11
+        fontSize:10
     },
 
     //*Componente Materia
@@ -339,8 +339,8 @@ export default StyleSheet.create({
         justifyContent:'center'
     },
     txtHoraAula:{
-        fontSize:11,
-        fontWeight:'500'
+        fontSize:10,
+        fontFamily:'Rubik_400Regular_Italic',
     },
     lixoImage:{
         width: (Dimensions.get('window').width/10),
@@ -371,9 +371,10 @@ export default StyleSheet.create({
     },
     lixo:{
         height: '100%',
-        width: '15%',
+        width: '10%',
         alignItems:'center',
-        justifyContent:'center'
+        justifyContent:'center',
+        marginRight:10
     },
     
     //*Botão Adicionar
@@ -409,14 +410,14 @@ export default StyleSheet.create({
 
     containerEventoCad:{
         width: (Dimensions.get('window').width/20)*17,
-        height: (Dimensions.get('window').width/20)*6.5,
+        height: (Dimensions.get('window').width/20)*4.5,
         backgroundColor:'#fff',
         borderRadius:19,
         marginTop:20
         },
     boxEventoCad:{
         width: '100%',
-        height: '20%',
+        height: '25%',
         backgroundColor:'#6AEA77',
         justifyContent:'center',
         alignItems:'center',
@@ -425,12 +426,13 @@ export default StyleSheet.create({
     },
     boxDescEventoCad:{
         width: '100%',
-        height: '60%',
-        padding: 5
+        height: '50%',
+        padding: 5,
+        justifyContent:'center'
     },
     containerHorarioEventoCad:{
         width: '100%',
-        height: '20%',
+        height: '25%',
         backgroundColor:'#D9D9D9',
         flexDirection:'row',
         borderBottomRightRadius:19,
@@ -458,11 +460,12 @@ export default StyleSheet.create({
         height: '100%',
         width: '100%',
         fontSize:14,
-        fontFamily:'Parisienne_400Regular'
+        fontFamily:'Parisienne_400Regular',
+        textAlignVertical:'center'
     },
     txtEvento:{
-        fontSize:12,
-        fontWeight:'600',
+        fontSize:10,
+        fontFamily:'Rubik_400Regular_Italic',
         marginRight:15
     },
     lixinho:{

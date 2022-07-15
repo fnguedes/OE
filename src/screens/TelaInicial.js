@@ -4,13 +4,11 @@ import style from '../Style/style'
 import CompEvent from '../components/Evento'
 import CompMat from '../components/Materia'
 
-export default function TelaInicial() {
-
-   
+export default function TelaInicial({ navigation }) {
 
     return (
         <SafeAreaView style={style.background}>
-            <StatusBar hidden/>
+            <StatusBar hidden />
             <Text style={style.tituloPag}>Afazeres do Dia</Text>
             <View style={style.ContTitulo}>
                 <Text style={style.TxtTitulo}>Aulas</Text>
@@ -18,7 +16,9 @@ export default function TelaInicial() {
             </View>
 
             <View style={style.container}>
-                <CompMat/>
+                <CompMat
+                    navigation={navigation}
+                />
             </View>
 
             <View style={style.ContTitulo}>
@@ -27,7 +27,9 @@ export default function TelaInicial() {
             </View>
 
             <View style={style.containerEventoDia}>
-                <CompEvent/>
+                <CompEvent
+                    navigation={navigation}
+                />
             </View>
 
         </SafeAreaView>

@@ -1,9 +1,9 @@
-import { View, Text } from 'react-native'
+import { View, Text,TouchableOpacity } from 'react-native'
 import React from 'react'
 import style from '../Style/style'
-export default function Materia() {
+export default function Materia({navigation}) {
   return (
-    <View style={style.containerComponenteMateria}>
+    <TouchableOpacity style={style.containerComponenteMateria} onPress={()=>navigation.navigate('Tela Materias')} >
       <View style={style.boxSiglaMat}>
         <Text style={style.txtSigla}>PI</Text>
       </View>
@@ -13,6 +13,6 @@ export default function Materia() {
       <View style={style.boxHoraAula}>
         <Text style={style.txtHoraAula}>15:00 - 17:00</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   )
 }

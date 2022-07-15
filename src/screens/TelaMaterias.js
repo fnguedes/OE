@@ -3,7 +3,7 @@ import style from '../Style/style'
 import { SafeAreaView, Text, View } from 'react-native'
 import Adicionar from '../components/ButtonAdicionar'
 import Mat from '../components/MateriaCadastrada'
-export default function Materias() {
+export default function Materias({navigation}) {
     return (
         <SafeAreaView style={style.background}>
             <Text style={style.tituloPag}>
@@ -16,7 +16,7 @@ export default function Materias() {
 
             </View>
             <View style={style.containerAdicionarEvento}>
-                <Adicionar caminho={'bla'} />
+                <Adicionar navigation={navigation} />
 
             </View>
         </SafeAreaView>

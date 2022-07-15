@@ -4,7 +4,7 @@ import style from '../Style/style'
 import Coluna, { Horas, Dias } from '../components/TabelaHorarios'
 import CompEvent from '../components/Evento'
 
-export default function Horarios() {
+export default function Horarios({navigation}) {
     return (
         <SafeAreaView style={style.background}>
             <Text style={style.tituloPag}>Horários</Text>
@@ -32,7 +32,7 @@ export default function Horarios() {
                     <View style={style.barra}></View>
                 </View>
                 <View style={style.container}>
-                    <CompEvent />
+                    <CompEvent  navigation={navigation}/>
                 </View>
             </View>
         </SafeAreaView>

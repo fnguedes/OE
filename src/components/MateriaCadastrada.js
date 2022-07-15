@@ -4,7 +4,7 @@ import style from '../Style/style'
 
 export default function MateriaCadastrada() {
     return (
-        <View style={style.ContainerMatCadastrada}>
+        <TouchableOpacity style={style.ContainerMatCadastrada}>
             <View style={{ flexDirection: 'row', flex: 1 }}>
                 <View style={style.boxSiglaMatCad}>
                     <Text style={style.txtSigla}>PI</Text>
@@ -20,6 +20,6 @@ export default function MateriaCadastrada() {
                 </TouchableOpacity>
             </View>
 
-        </View>
+        </TouchableOpacity>
     )
 }
