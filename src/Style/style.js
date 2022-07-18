@@ -472,5 +472,16 @@ export default StyleSheet.create({
         width: Dimensions.get('window').width/20,
         height: Dimensions.get('window').width/20,
         marginRight:12
-    }
+    },
+    //*Componente do botão de voltar página
+    containerButtonBack:{
+        backgroundColor:'#B3DDE3'
+    },
+    buttonBack:{
+        width: Dimensions.get('window').width/12,
+        height: Dimensions.get('window').width/12,
+        marginTop:8,
+        marginLeft:8
+    },
+
 })

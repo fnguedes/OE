@@ -1,10 +1,13 @@
-import { View, Text } from 'react-native'
+import { View, Text ,TouchableOpacity,Image} from 'react-native'
 import React from 'react'
+import style from '../Style/style'
+import Back from '../components/ButtonBack'
 
-export default function TelaEventoCad() {
+export default function TelaEventoCad({navigation}) {
+  
   return (
-    <View>
-      <Text>TelaEventoCad</Text>
+    <View style={style.background}>
+      <Back navigation={navigation}/>
     </View>
   )
 }
