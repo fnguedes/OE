@@ -478,10 +478,15 @@ export default StyleSheet.create({
         backgroundColor:'#B3DDE3'
     },
     buttonBack:{
-        width: Dimensions.get('window').width/12,
-        height: Dimensions.get('window').width/12,
+        width: Dimensions.get('window').width/11,
+        height: Dimensions.get('window').width/11,
         marginTop:8,
         marginLeft:8
     },
-
+    //*Tela Materia cadastrada
+    containerTituloMC:{
+        flexDirection:'row',
+        width: Dimensions.get('window').width,
+        height: Dimensions.get('window').height/15
+    }
 })
