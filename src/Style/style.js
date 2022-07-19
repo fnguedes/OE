@@ -1,12 +1,3 @@
-
-import { Cinzel_400Regular } from '@expo-google-fonts/cinzel'
-import { Courgette_400Regular } from '@expo-google-fonts/courgette'
-import { DancingScript_600SemiBold } from '@expo-google-fonts/dancing-script'
-import { Merriweather_400Regular } from '@expo-google-fonts/merriweather'
-import { Parisienne_400Regular } from '@expo-google-fonts/parisienne'
-import { Rubik_400Regular_Italic } from '@expo-google-fonts/rubik'
-import { Tinos_400Regular } from '@expo-google-fonts/tinos'
-import { Unna_400Regular } from '@expo-google-fonts/unna'
 import { Dimensions, StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
@@ -272,7 +263,8 @@ export default StyleSheet.create({
         borderTopRightRadius:25,
         borderBottomRightRadius:25,
         alignItems:'center',
-        justifyContent:'center'
+        justifyContent:'center',
+        marginRight:5
     },
     txtInfoEventoTitulo:{
         paddingLeft:5,
@@ -292,7 +284,7 @@ export default StyleSheet.create({
     },
     txtHoraEvento:{
         fontWeight:'500',
-        fontFamily:'Rubik_400Regular_Italic',
+        fontFamily:'Cinzel_400Regular',
         fontSize:10
     },
 
@@ -340,7 +332,7 @@ export default StyleSheet.create({
     },
     txtHoraAula:{
         fontSize:10,
-        fontFamily:'Rubik_400Regular_Italic',
+        fontFamily:'Cinzel_400Regular',
     },
     lixoImage:{
         width: (Dimensions.get('window').width/10),
@@ -465,7 +457,7 @@ export default StyleSheet.create({
     },
     txtEvento:{
         fontSize:10,
-        fontFamily:'Rubik_400Regular_Italic',
+        fontFamily:'Cinzel_400Regular',
         marginRight:15
     },
     lixinho:{
@@ -488,5 +480,43 @@ export default StyleSheet.create({
         flexDirection:'row',
         width: Dimensions.get('window').width,
         height: Dimensions.get('window').height/15
+    },
+    contTituloPagNv2:{
+        width: (Dimensions.get('window').width/11)*10,
+        height: '100%',
+    },
+    tituloPagNV2:{
+        alignSelf:'center',
+        paddingTop:10,
+        flex:1,
+        fontSize:26,
+        fontFamily:'DancingScript_600SemiBold'
+    },
+    containerInfos:{
+        width: '100%',
+        height:'40%',
+        flexDirection:'row',
+    },
+    containerNomeDesc:{
+        width: '65%',
+        height: '100%',
+
+    } ,
+    containerNome:{
+
+    },
+    containerDesc:{
+
+    },
+    containerHrs:{
+        width: '35%',
+        height: '100%',
+        justifyContent:'center',
+        alignItems:'flex-end'
+    },
+    tabHrs:{
+        width: '90%',
+        height: '95%',
+        backgroundColor:'#fff'
     }
 })

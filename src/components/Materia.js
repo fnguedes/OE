@@ -4,7 +4,7 @@ import style from '../Style/style'
 export default function Materia({navigation}) {
   return (
     <TouchableOpacity style={style.containerComponenteMateria} 
-    onPress={()=>navigation.navigate('Tela Materia')} >
+    onPress={()=>navigation.navigate('Tela Materias')} >
       <View style={style.boxSiglaMat}>
         <Text style={style.txtSigla}>PI</Text>
       </View>

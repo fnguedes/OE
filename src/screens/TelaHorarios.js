@@ -32,7 +32,7 @@ export default function Horarios({navigation}) {
                     <View style={style.barra}></View>
                 </View>
                 <View style={style.container}>
-                    <CompEvent  navigation={navigation}/>
+                    <CompEvent semanal={true} navigation={navigation}/>
                 </View>
             </View>
         </SafeAreaView>
