@@ -1,3 +1,4 @@
+import { Courgette_400Regular } from '@expo-google-fonts/courgette'
 import { Dimensions, StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
@@ -494,29 +495,98 @@ export default StyleSheet.create({
     },
     containerInfos:{
         width: '100%',
-        height:'40%',
+        height:'30%',
         flexDirection:'row',
+        marginTop:5
     },
     containerNomeDesc:{
-        width: '65%',
+        width: '60%',
         height: '100%',
-
+        justifyContent:'flex-start',
+        alignItems:'flex-start',
+        paddingLeft:'7.5%',
+        paddingRight:'4%'
     } ,
     containerNome:{
-
+        width: '100%',
+        height: '12%',
+        backgroundColor:'#fff',
+        borderRadius:20,
+        marginTop:'10%',
+        alignItems:'flex-start',
+        justifyContent:'center',
+        paddingLeft:8
     },
     containerDesc:{
-
+        width: '100%',
+        height: '70%',
+        backgroundColor:'#fff',
+        borderRadius:20
     },
     containerHrs:{
-        width: '35%',
+        width: '40%',
         height: '100%',
-        justifyContent:'center',
-        alignItems:'flex-end'
+        justifyContent:'flex-start',
+        alignItems:'flex-start',
+        paddingRight:'7%',
+        paddingLeft:'4%'
     },
     tabHrs:{
-        width: '90%',
+        width: '100%',
         height: '95%',
-        backgroundColor:'#fff'
+        backgroundColor:'#fff',
+        borderRadius:20
+    },
+    txtMiniTitle:{
+        fontFamily:'Courgette_400Regular',
+        fontSize:11,
+        marginTop:5,
+        marginBottom:3,
+        alignSelf:'center'
+    },
+    txtNomeProfMatInfo:{
+        fontFamily:'Courgette_400Regular',
+        fontSize:11,
+        color: '#9C9C9C'
+    },
+    containerAtividades:{
+        width: '100%',
+        height:'45%',
+        alignItems:'center',
+        justifyContent:'center',
+        paddingTop:20
+    },
+    listAtividades:{
+        width: '80%',
+        height:'89%',
+        alignItems:'center',
+        backgroundColor:'#fff',
+        borderRadius:20
+        
+    },
+    buttonSave:{
+        width: '100%',
+        height:'10%',
+        justifyContent:'center',
+        alignItems:'center',
+        marginTop:17
+    },
+
+
+
+
+    //*Butão Generico pra cadastrar e salvar
+    containerButtonGe:{
+        width: Dimensions.get('window').width/5,
+        height: Dimensions.get('window').width/10,
+        backgroundColor:'#1B2796',
+        justifyContent:'center',
+        alingnItems:'center',
+        borderRadius:15
+    },
+    txtButtonGe:{
+        fontSize:15,
+        color:'#fff',
+        alignSelf:'center'
     }
 })

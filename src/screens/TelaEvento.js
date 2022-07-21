@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, View, SafeAreaView } from 'react-native'
 import style from '../Style/style'
-import Adicionar from '../components/ButtonAdicionarEvent'
+import Adicionar from '../components/ButtonAdicionar'
 import EventCad from '../components/EventoCadastrado'
 
 export default function Eventos({navigation}) {
@@ -15,7 +15,7 @@ export default function Eventos({navigation}) {
 
             </View>
             <View style={style.containerAdicionarEvento}>
-                <Adicionar navigation={navigation} />
+                <Adicionar navigation={navigation} tela='Tela Cadastro Evento' />
 
             </View>
         </SafeAreaView>
