@@ -1,13 +1,13 @@
-import { View, Text ,TouchableOpacity,Image} from 'react-native'
+import { View} from 'react-native'
 import React from 'react'
 import style from '../Style/style'
-import Back from '../components/ButtonBack'
+import Tilt from '../components/TituloSecond'
 
 export default function TelaEventoCad({navigation}) {
   
   return (
     <View style={style.background}>
-      <Back navigation={navigation}/>
+      <Tilt titulo='Cadastrar Evento' navigation={navigation}/>
     </View>
   )
 }

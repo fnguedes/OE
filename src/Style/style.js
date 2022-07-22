@@ -1,12 +1,4 @@
-
-import { Cinzel_400Regular } from '@expo-google-fonts/cinzel'
 import { Courgette_400Regular } from '@expo-google-fonts/courgette'
-import { DancingScript_600SemiBold } from '@expo-google-fonts/dancing-script'
-import { Merriweather_400Regular } from '@expo-google-fonts/merriweather'
-import { Parisienne_400Regular } from '@expo-google-fonts/parisienne'
-import { Rubik_400Regular_Italic } from '@expo-google-fonts/rubik'
-import { Tinos_400Regular } from '@expo-google-fonts/tinos'
-import { Unna_400Regular } from '@expo-google-fonts/unna'
 import { Dimensions, StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
@@ -272,7 +264,8 @@ export default StyleSheet.create({
         borderTopRightRadius:25,
         borderBottomRightRadius:25,
         alignItems:'center',
-        justifyContent:'center'
+        justifyContent:'center',
+        marginRight:5
     },
     txtInfoEventoTitulo:{
         paddingLeft:5,
@@ -292,7 +285,7 @@ export default StyleSheet.create({
     },
     txtHoraEvento:{
         fontWeight:'500',
-        fontFamily:'Rubik_400Regular_Italic',
+        fontFamily:'Cinzel_400Regular',
         fontSize:10
     },
 
@@ -340,7 +333,7 @@ export default StyleSheet.create({
     },
     txtHoraAula:{
         fontSize:10,
-        fontFamily:'Rubik_400Regular_Italic',
+        fontFamily:'Cinzel_400Regular',
     },
     lixoImage:{
         width: (Dimensions.get('window').width/10),
@@ -465,7 +458,7 @@ export default StyleSheet.create({
     },
     txtEvento:{
         fontSize:10,
-        fontFamily:'Rubik_400Regular_Italic',
+        fontFamily:'Cinzel_400Regular',
         marginRight:15
     },
     lixinho:{
@@ -488,5 +481,112 @@ export default StyleSheet.create({
         flexDirection:'row',
         width: Dimensions.get('window').width,
         height: Dimensions.get('window').height/15
+    },
+    contTituloPagNv2:{
+        width: (Dimensions.get('window').width/11)*10,
+        height: '100%',
+    },
+    tituloPagNV2:{
+        alignSelf:'center',
+        paddingTop:10,
+        flex:1,
+        fontSize:26,
+        fontFamily:'DancingScript_600SemiBold'
+    },
+    containerInfos:{
+        width: '100%',
+        height:'30%',
+        flexDirection:'row',
+        marginTop:5
+    },
+    containerNomeDesc:{
+        width: '60%',
+        height: '100%',
+        justifyContent:'flex-start',
+        alignItems:'flex-start',
+        paddingLeft:'7.5%',
+        paddingRight:'4%'
+    } ,
+    containerNome:{
+        width: '100%',
+        height: '12%',
+        backgroundColor:'#fff',
+        borderRadius:20,
+        marginTop:'10%',
+        alignItems:'flex-start',
+        justifyContent:'center',
+        paddingLeft:8
+    },
+    containerDesc:{
+        width: '100%',
+        height: '70%',
+        backgroundColor:'#fff',
+        borderRadius:20
+    },
+    containerHrs:{
+        width: '40%',
+        height: '100%',
+        justifyContent:'flex-start',
+        alignItems:'flex-start',
+        paddingRight:'7%',
+        paddingLeft:'4%'
+    },
+    tabHrs:{
+        width: '100%',
+        height: '95%',
+        backgroundColor:'#fff',
+        borderRadius:20
+    },
+    txtMiniTitle:{
+        fontFamily:'Courgette_400Regular',
+        fontSize:11,
+        marginTop:5,
+        marginBottom:3,
+        alignSelf:'center'
+    },
+    txtNomeProfMatInfo:{
+        fontFamily:'Courgette_400Regular',
+        fontSize:11,
+        color: '#9C9C9C'
+    },
+    containerAtividades:{
+        width: '100%',
+        height:'45%',
+        alignItems:'center',
+        justifyContent:'center',
+        paddingTop:20
+    },
+    listAtividades:{
+        width: '80%',
+        height:'89%',
+        alignItems:'center',
+        backgroundColor:'#fff',
+        borderRadius:20
+        
+    },
+    buttonSave:{
+        width: '100%',
+        height:'10%',
+        justifyContent:'center',
+        alignItems:'center',
+        marginTop:17
+    },
+
+
+
+
+    //*Butão Generico pra cadastrar e salvar
+    containerButtonGe:{
+        width: Dimensions.get('window').width/5,
+        height: Dimensions.get('window').width/10,
+        backgroundColor:'#1B2796',
+        justifyContent:'center',
+        alingnItems:'center',
+        borderRadius:15
+    },
+    txtButtonGe:{
+        fontSize:15,
+        color:'#fff',
+        alignSelf:'center'
     }
 })
