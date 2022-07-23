@@ -11,7 +11,8 @@ export default function Tarefa() {
                     <Text style={style.txtTituloTarefa}>Exercicio</Text>
                 </View>
                 <View style={style.dataTarefa}>
-                    <Text style={style.txtDataTarefa}>14/05/22 22:00</Text>
+                    <Text style={style.txtDataTarefa}>14/05/22</Text>
+                    <Text style={style.txtDataTarefa}>22:00</Text>
                 </View>
 
             </View>

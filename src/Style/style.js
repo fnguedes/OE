@@ -1,5 +1,6 @@
 import { Cinzel_400Regular } from '@expo-google-fonts/cinzel'
 import { Courgette_400Regular } from '@expo-google-fonts/courgette'
+import { Parisienne_400Regular } from '@expo-google-fonts/parisienne'
 import { Unna_400Regular } from '@expo-google-fonts/unna'
 import { Dimensions, StyleSheet } from 'react-native'
 
@@ -530,7 +531,13 @@ export default StyleSheet.create({
         width: '100%',
         height: '79%',
         backgroundColor:'#fff',
-        borderRadius:20
+        borderRadius:20,
+        padding: 10,
+        color:'#9C9C9C',
+        fontFamily: 'Courgette_400Regular',
+        fontSize:13,
+        textAlignVertical:'top',
+        textDecorationLine:'underline'
     },
     containerHrs:{
         width: '30%',
@@ -612,7 +619,8 @@ export default StyleSheet.create({
         height: '100%',
         backgroundColor:'#9DF5A6',
         borderRadius:25,
-        flexDirection:'row'
+        flexDirection:'row',
+        elevation:2
     },
     prioridadeTarefa:{
         backgroundColor:'#2BED3F',
@@ -635,13 +643,14 @@ export default StyleSheet.create({
     },
     dataTarefa:{
         flex:1,
-        justifyContent:'center',
-        alignItems:'flex-end',
-        paddingRight:3
+        justifyContent:'flex-end',
+        alignItems:'center',
+        flexDirection:'row'
     },
     txtDataTarefa:{
         fontFamily:'Cinzel_400Regular',
-        fontSize:11
+        fontSize:10,
+        paddingRight:6,
     },
     concluirTarefa:{
         height:'100%',
@@ -665,6 +674,12 @@ export default StyleSheet.create({
     imageTarefa:{
         width: Dimensions.get('window').width/14,
         height: Dimensions.get('window').width/14
+    },
+    botaoAdicionarTarefa:{
+        width:(Dimensions.get('window').width/10)*8.7,
+        height: '12%',
+        justifyContent:'center',
+        alignItems:'flex-end'
     }
     
 })

@@ -1,7 +1,7 @@
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
+import TelaAT from './screens/TelaTarefa'
 import TelaMI from './screens/TelaMateriaInfo'
 import TelaMC from './screens/TelaMateriaCad'
 import TelaM from './screens/TelaMaterias'
@@ -31,6 +31,7 @@ const MStack = () => {
             <Stack.Screen name="Tela Materia" component={TelaM} options={{ headerShown: false,title:'Tela das Materias' }} />
             <Stack.Screen name="Tela Info Materia" component={TelaMI} options={{ headerShown: false,title:'Tela Info da Materia' }} />
             <Stack.Screen name="Tela Cadastro Materia" component={TelaMC} options={{ headerShown: false,title:'Tela Cadastro da Materia' }} />
+            <Stack.Screen name="Tela Adicionar Tarefa" component={TelaAT} options={{ headerShown: false,title:'Tela Cadastro da Materia' }} />
         </Stack.Navigator>
     )
 }

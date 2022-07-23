@@ -4,7 +4,7 @@ import style from '../Style/style'
 import Tilt from '../components/TituloSecond'
 import Salvar from '../components/ButtonGenerico'
 import Tarefa from '../components/Tarefa'
-
+import Adicionar from '../components/ButtonAdicionar'
 export default function TelaMateriaInfo({ navigation }) {
   return (
     <View style={style.background}>
@@ -20,8 +20,10 @@ export default function TelaMateriaInfo({ navigation }) {
             />
           </View>
           <Text style={style.txtMiniTitle}>Descrição</Text>
-          <View style={style.containerDesc}>
-          </View>
+          <TextInput style={style.containerDesc} 
+          multiline={true} numberOfLines={5}
+          />
+          
         </View>
 
         <View style={style.containerHrs}>
@@ -34,9 +36,14 @@ export default function TelaMateriaInfo({ navigation }) {
         <Text style={style.txtMiniTitle}>Tarefas a fazer</Text>
 
         <View style={style.listAtividades}>
-
+          <View style={{flex:1}}>
           <Tarefa />
+          </View>
 
+          <View style={style.botaoAdicionarTarefa}>
+          <Adicionar navigation={navigation} tela={'Tela Adicionar Tarefa'}/>
+          </View>
+          
         </View>
 
       </View>
