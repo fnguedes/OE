@@ -9,6 +9,7 @@ import { Rubik_400Regular_Italic } from "@expo-google-fonts/rubik";
 import { Unna_400Regular } from "@expo-google-fonts/unna";
 import { Tinos_400Regular } from "@expo-google-fonts/tinos";
 import { Parisienne_400Regular } from "@expo-google-fonts/parisienne";
+import { EmilysCandy_400Regular } from "@expo-google-fonts/emilys-candy";
 import AppLoading from "expo-app-loading/build/AppLoading";
 
 
@@ -18,7 +19,7 @@ export default function App() {
     DancingScript_600SemiBold,Courgette_400Regular,
     Merriweather_900Black,Cinzel_400Regular,
     Rubik_400Regular_Italic,Tinos_400Regular,Unna_400Regular,
-    Parisienne_400Regular
+    Parisienne_400Regular, EmilysCandy_400Regular
   });
 
   if (!fontsLoaded) {

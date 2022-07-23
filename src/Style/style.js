@@ -1,4 +1,6 @@
+import { Cinzel_400Regular } from '@expo-google-fonts/cinzel'
 import { Courgette_400Regular } from '@expo-google-fonts/courgette'
+import { Unna_400Regular } from '@expo-google-fonts/unna'
 import { Dimensions, StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
@@ -92,13 +94,14 @@ export default StyleSheet.create({
         alignItems:'center',
         justifyContent:'center',
         marginTop:30,
-        marginBottom:20
+        marginBottom:20,
     },
     containerTabela:{
         width: "90%",
         height: '100%',
         alignItems:'center',
         justifyContent:'center',
+        
     },
     eventosSemanais:{
         flex:8,
@@ -169,7 +172,7 @@ export default StyleSheet.create({
         borderBottomLeftRadius:10,
         justifyContent:'center',
         alignItems:'center',
-
+        elevation:4
     },
     boxTxtHoras:{
         width: "100%",
@@ -217,7 +220,8 @@ export default StyleSheet.create({
         borderColor:"#808080",
         borderRightWidth:1,
         justifyContent:'center',
-        alignItems:'center'
+        alignItems:'center',
+        elevation:4
     },
     boxAulasUltimo:{
         width: '100%',
@@ -235,7 +239,8 @@ export default StyleSheet.create({
         borderColor:"#808080",
         justifyContent:'center',
         alignItems:'center',
-        borderBottomRightRadius:10
+        borderBottomRightRadius:10,
+        elevation:4
     },
 
     //*Componente Evento
@@ -244,7 +249,7 @@ export default StyleSheet.create({
         height: (Dimensions.get('window').width/20)*2,
         backgroundColor:'#fff',
         borderRadius:25,
-        elevation:2,
+        elevation:4,
         marginTop:10
     },
     nivelPrioridade:{
@@ -296,8 +301,8 @@ export default StyleSheet.create({
         flexDirection:'row',
         backgroundColor:'#ACAFFF',
         borderRadius:30,
-        elevation:2,
-        marginTop:15
+        marginTop:15,
+        elevation:4
     },
     boxSiglaMat:{
         height:'100%',
@@ -308,8 +313,7 @@ export default StyleSheet.create({
         borderTopRightRadius:10,
         borderBottomRightRadius:10,
         alignItems:'center',
-        justifyContent:'center'
-        
+        justifyContent:'center',
     },
     txtSigla:{
         fontSize:30,
@@ -344,10 +348,10 @@ export default StyleSheet.create({
     ContainerMatCadastrada:{
         width: (Dimensions.get('window').width/20)*17.5,
         height: (Dimensions.get('window').width/20)*2.5,
-        backgroundColor:'#ACAFFF',
+        backgroundColor:'#acaFFF',
         marginTop:20,
         borderRadius:11,
-        elevation:2
+        elevation:4
     }, 
     boxSiglaMatCad:{
         height:'100%',
@@ -379,6 +383,8 @@ export default StyleSheet.create({
         borderRadius:50,
         alignItems:'center',
         justifyContent:'center',
+        elevation:4,
+        
     },
     txtAdicionar:{
         fontSize:26 ,
@@ -403,10 +409,11 @@ export default StyleSheet.create({
 
     containerEventoCad:{
         width: (Dimensions.get('window').width/20)*17,
-        height: (Dimensions.get('window').width/20)*4.5,
+        height: (Dimensions.get('window').width/20)*5.5,
         backgroundColor:'#fff',
         borderRadius:19,
-        marginTop:20
+        marginTop:20,
+        elevation:4
         },
     boxEventoCad:{
         width: '100%',
@@ -429,7 +436,8 @@ export default StyleSheet.create({
         backgroundColor:'#D9D9D9',
         flexDirection:'row',
         borderBottomRightRadius:19,
-        borderBottomLeftRadius:19
+        borderBottomLeftRadius:19,
+        elevation:4
     },
     boxEventoData:{
         height: '100%',
@@ -454,7 +462,8 @@ export default StyleSheet.create({
         width: '100%',
         fontSize:14,
         fontFamily:'Parisienne_400Regular',
-        textAlignVertical:'center'
+        textAlignVertical:'center',
+        color:'#000'
     },
     txtEvento:{
         fontSize:10,
@@ -480,7 +489,7 @@ export default StyleSheet.create({
     containerTituloMC:{
         flexDirection:'row',
         width: Dimensions.get('window').width,
-        height: Dimensions.get('window').height/15
+        height: Dimensions.get('window').height/15,
     },
     contTituloPagNv2:{
         width: (Dimensions.get('window').width/11)*10,
@@ -491,7 +500,7 @@ export default StyleSheet.create({
         paddingTop:10,
         flex:1,
         fontSize:26,
-        fontFamily:'DancingScript_600SemiBold'
+        fontFamily:'DancingScript_600SemiBold',
     },
     containerInfos:{
         width: '100%',
@@ -500,12 +509,11 @@ export default StyleSheet.create({
         marginTop:5
     },
     containerNomeDesc:{
-        width: '60%',
+        width: '55%',
         height: '100%',
         justifyContent:'flex-start',
         alignItems:'flex-start',
-        paddingLeft:'7.5%',
-        paddingRight:'4%'
+        marginLeft:'5%'
     } ,
     containerNome:{
         width: '100%',
@@ -515,31 +523,32 @@ export default StyleSheet.create({
         marginTop:'10%',
         alignItems:'flex-start',
         justifyContent:'center',
-        paddingLeft:8
+        paddingLeft:8,
+        paddingRight:8
     },
     containerDesc:{
         width: '100%',
-        height: '70%',
+        height: '79%',
         backgroundColor:'#fff',
         borderRadius:20
     },
     containerHrs:{
-        width: '40%',
+        width: '30%',
         height: '100%',
         justifyContent:'flex-start',
         alignItems:'flex-start',
-        paddingRight:'7%',
-        paddingLeft:'4%'
+        marginRight:'5%',
+        marginLeft:'5%'
     },
     tabHrs:{
         width: '100%',
-        height: '95%',
+        height: '100%',
         backgroundColor:'#fff',
         borderRadius:20
     },
     txtMiniTitle:{
         fontFamily:'Courgette_400Regular',
-        fontSize:11,
+        fontSize:13,
         marginTop:5,
         marginBottom:3,
         alignSelf:'center'
@@ -554,22 +563,22 @@ export default StyleSheet.create({
         height:'45%',
         alignItems:'center',
         justifyContent:'center',
-        paddingTop:20
+        marginTop:20
     },
     listAtividades:{
-        width: '80%',
-        height:'89%',
-        alignItems:'center',
+        width: '90%',
+        height:'80%',
         backgroundColor:'#fff',
-        borderRadius:20
+        borderRadius:20,
+        padding:20,
         
     },
     buttonSave:{
         width: '100%',
         height:'10%',
-        justifyContent:'center',
+        justifyContent:'flex-start',
         alignItems:'center',
-        marginTop:17
+        marginTop:10
     },
 
 
@@ -582,11 +591,80 @@ export default StyleSheet.create({
         backgroundColor:'#1B2796',
         justifyContent:'center',
         alingnItems:'center',
-        borderRadius:15
+        borderRadius:15,
+        elevation:4
     },
     txtButtonGe:{
-        fontSize:15,
+        fontSize:17,
         color:'#fff',
-        alignSelf:'center'
+        alignSelf:'center',
+        fontWeight:'bold',
+    },
+    //*Componente Tarefa
+    containerGeralTarefa:{
+        width: '100%',
+        height: '21%',
+        paddingBottom:'4%',
+        flexDirection:'row'
+    },
+    containerTarefa:{
+        width: '72%',
+        height: '100%',
+        backgroundColor:'#9DF5A6',
+        borderRadius:25,
+        flexDirection:'row'
+    },
+    prioridadeTarefa:{
+        backgroundColor:'#2BED3F',
+        width: '10%',
+        height:'100%',
+        borderRightWidth:1,
+        borderRightColor:'#909090',
+        borderTopLeftRadius:25,
+        borderBottomLeftRadius:25
+    },
+    tituloTarefa:{
+        flex:1,
+        justifyContent:'center',
+        alignItems:'flex-start',
+        paddingLeft:3
+    },
+    txtTituloTarefa:{
+        fontFamily:'EmilysCandy_400Regular',
+        fontSize:13
+    },
+    dataTarefa:{
+        flex:1,
+        justifyContent:'center',
+        alignItems:'flex-end',
+        paddingRight:3
+    },
+    txtDataTarefa:{
+        fontFamily:'Cinzel_400Regular',
+        fontSize:11
+    },
+    concluirTarefa:{
+        height:'100%',
+        width: '11%',
+        backgroundColor:'#2BED3F',
+        marginLeft:10,
+        borderRadius:20,
+        alignItems:'center',
+        justifyContent:'center'
+    },
+    deletarTarefa:{
+        height:'100%',
+        width: '11%',
+        backgroundColor:'#f00',
+        marginLeft:10,
+        borderRadius:20,
+        alignItems:'center',
+        justifyContent:'center'
+
+    },
+    imageTarefa:{
+        width: Dimensions.get('window').width/14,
+        height: Dimensions.get('window').width/14
     }
+    
 })

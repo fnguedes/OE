@@ -1,17 +1,20 @@
-import { View, Text, Image, TouchableOpacity } from 'react-native'
+import { View, Text, Image, TouchableOpacity, TextInput } from 'react-native'
 import React from 'react'
 import style from '../Style/style'
 
 export default function EventoCadastrado() {
     return (
-        <TouchableOpacity style={style.containerEventoCad}>
+        <View style={style.containerEventoCad}>
             <View style={style.boxEventoCad}>
 
                 <Text style={style.txtTituloEventoCad}>Jantar com a família</Text>
             </View>
 
             <View style={style.boxDescEventoCad}>
-                <Text style={style.txtDescEvento}>Breve Descrição</Text>
+                <TextInput style={style.txtDescEvento}
+                multiline={true} editable={false}
+                value={'Breve Descrição'} numberOfLines={2}
+                />
             </View>
 
             <View style={style.containerHorarioEventoCad}>
@@ -21,10 +24,10 @@ export default function EventoCadastrado() {
                 </View>
                 <View style={style.lixoEventoCad}>
                     <TouchableOpacity>
-                        <Image source={require('../image/lixinho.png')} style={style.lixinho}/>
+                        <Image source={require('../image/lixinho.png')} style={style.lixinho} />
                     </TouchableOpacity>
                 </View>
             </View>
-        </TouchableOpacity>
+        </View>
     )
 }

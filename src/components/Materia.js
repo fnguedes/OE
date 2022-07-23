@@ -1,10 +1,10 @@
-import { View, Text,TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
 import style from '../Style/style'
-export default function Materia({navigation}) {
+export default function Materia({ navigation }) {
   return (
-    <TouchableOpacity style={style.containerComponenteMateria} 
-    onPress={()=>navigation.navigate('Tela Materias')} >
+    <TouchableOpacity style={style.containerComponenteMateria}
+      onPress={() => navigation.navigate('Tela Materias')} >
       <View style={style.boxSiglaMat}>
         <Text style={style.txtSigla}>PI</Text>
       </View>
